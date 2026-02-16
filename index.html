@@ -21,12 +21,12 @@
       width: 100%;
     }
     
-    .portfolio-wrapper { 
+    .portfolio-wrapper {
       height: 100%;
       width: 100%;
       overflow-y: auto;
       overflow-x: hidden;
-    } 
+    }
     
     .glitch-text {
       font-family: 'Orbitron', monospace;
@@ -162,6 +162,10 @@
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3), 0 0 20px rgba(0, 245, 255, 0.2);
     }
+
+    .project-card {
+      cursor: pointer;
+    }
     
     .skill-bar {
       background: linear-gradient(90deg, #ff006e, #00f5ff);
@@ -274,6 +278,12 @@
           <a href="#projects" class="neon-btn danger-border px-8 py-3 font-mono text-sm" style="color: #ff006e;">
             VIEW_PROJECTS
           </a>
+          <a href="https://github.com/koketso35/personal-portfolio/raw/main/c/Koketso%20Mohlala%20CV.pdf" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-8 py-3 font-mono text-sm flex items-center gap-2" style="color: #00f5ff;">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+            </svg>
+            DOWNLOAD_CV
+          </a>
           <a href="#contact" class="neon-btn px-8 py-3 font-mono text-sm" style="background: linear-gradient(135deg, #ff006e, #8b0040); color: #fff;">
             INITIALIZE_CONTACT
           </a>
@@ -310,7 +320,7 @@
               </p>
             </div>
             
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-4 mb-6">
               <div class="card-danger p-4 rounded-lg text-center">
                 <div class="text-3xl font-bold mb-1" style="color: #ff006e;">3+</div>
                 <div class="text-xs font-mono" style="color: #888;">PROJECTS_COMPLETED</div>
@@ -318,6 +328,20 @@
               <div class="card-danger p-4 rounded-lg text-center">
                 <div class="text-3xl font-bold mb-1" style="color: #00f5ff;">10+</div>
                 <div class="text-xs font-mono" style="color: #888;">TECHNOLOGIES_MASTERED</div>
+              </div>
+            </div>
+            
+            <div class="card-danger p-4 rounded-lg">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="#00f5ff" viewBox="0 0 24 24">
+                  <path d="M12 2L4 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-8-5z"/>
+                </svg>
+                <div>
+                  <p class="font-mono text-sm mb-1" style="color: #00f5ff;">EDUCATION_CREDENTIAL</p>
+                  <p class="font-mono text-xs" style="color: #e0e0e0;">Diploma in Information Technology</p>
+                  <p class="font-mono text-xs mt-1" style="color: #888;">Richfield Graduate Institute of Technology</p>
+                  <p class="font-mono text-xs mt-1" style="color: #ff006e;">Graduation: 2025</p>
+                </div>
               </div>
             </div>
           </div>
@@ -489,7 +513,7 @@
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project 1 - Weather Searcher -->
-          <div class="card-danger rounded-lg overflow-hidden group">
+          <div class="card-danger rounded-lg overflow-hidden group project-card" onclick="window.location.href='https://koketso35.github.io/weatherseacher/'">
             <div class="h-48 relative" style="background: linear-gradient(135deg, #1a1a2e, #2d1f3d);">
               <div class="absolute inset-0 flex items-center justify-center">
                 <svg class="w-20 h-20 opacity-50 group-hover:opacity-80 transition-opacity" viewBox="0 0 100 100" fill="none">
@@ -513,13 +537,13 @@
                 <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(255,0,110,0.1); color: #ff006e;">CSS3</span>
               </div>
               <div class="flex gap-3">
-                <a href="https://koketso35.github.io/weatherseacher/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;">
+                <a href="https://koketso35.github.io/weatherseacher/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                   </svg>
                   LIVE_DEMO
                 </a>
-                <a href="https://github.com/koketso35/weatherseacher" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;">
+                <a href="https://github.com/koketso35/weatherseacher" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                   </svg>
@@ -530,7 +554,7 @@
           </div>
           
           <!-- Project 2 - IT Services -->
-          <div class="card-danger rounded-lg overflow-hidden group">
+          <div class="card-danger rounded-lg overflow-hidden group project-card" onclick="window.location.href='https://koketso35.github.io/IT_SERVICES/'">
             <div class="h-48 relative" style="background: linear-gradient(135deg, #1a2e1a, #1f3d2d);">
               <div class="absolute inset-0 flex items-center justify-center">
                 <svg class="w-20 h-20 opacity-50 group-hover:opacity-80 transition-opacity" viewBox="0 0 100 100" fill="none">
@@ -556,13 +580,13 @@
                 <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(255,0,110,0.1); color: #ff006e;">JavaScript</span>
               </div>
               <div class="flex gap-3">
-                <a href="https://koketso35.github.io/IT_SERVICES/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;">
+                <a href="https://koketso35.github.io/IT_SERVICES/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                   </svg>
                   LIVE_DEMO
                 </a>
-                <a href="https://github.com/koketso35/IT_SERVICES" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;">
+                <a href="https://github.com/koketso35/IT_SERVICES" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                   </svg>
@@ -573,7 +597,7 @@
           </div>
           
           <!-- Project 3 - Task Manager -->
-          <div class="card-danger rounded-lg overflow-hidden group">
+          <div class="card-danger rounded-lg overflow-hidden group project-card" onclick="window.location.href='https://koketso35.github.io/todo/'">
             <div class="h-48 relative" style="background: linear-gradient(135deg, #2e1a2e, #3d1f3d);">
               <div class="absolute inset-0 flex items-center justify-center">
                 <svg class="w-20 h-20 opacity-50 group-hover:opacity-80 transition-opacity" viewBox="0 0 100 100" fill="none">
@@ -582,8 +606,8 @@
                   <path d="M35 55 H65 M35 65 H55" stroke="#00f5ff" stroke-width="2"/>
                 </svg>
               </div>
-              <div class="absolute top-3 right-3 px-2 py-1 rounded text-xs font-mono" style="background: rgba(255, 0, 110, 0.2); color: #ff006e;">
-                IN_DEV
+              <div class="absolute top-3 right-3 px-2 py-1 rounded text-xs font-mono" style="background: rgba(0, 245, 255, 0.2); color: #00f5ff;">
+                LIVE
               </div>
             </div>
             <div class="p-6">
@@ -595,13 +619,13 @@
                 <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(255,0,110,0.1); color: #ff006e;">Firebase</span>
               </div>
               <div class="flex gap-3">
-                <button class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2 opacity-50 cursor-not-allowed" style="color: #00f5ff;">
+                <a href="https://koketso35.github.io/todo/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                   </svg>
-                  COMING_SOON
-                </button>
-                <a href="https://github.com/koketso35" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;">
+                  LIVE_DEMO
+                </a>
+                <a href="https://github.com/koketso35/todo/" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;" onclick="event.stopPropagation();">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                   </svg>
@@ -639,7 +663,7 @@
           </div>
           
           <div class="grid md:grid-cols-3 gap-6 mb-8">
-            <a href="mailto:koketsomohlala35@gmail.com" class="card-danger p-6 rounded-lg text-center hover:scale-105 transition-transform">
+            <a href="mailto:koketsohlabirwa02@gmail.com" class="card-danger p-6 rounded-lg text-center hover:scale-105 transition-transform">
               <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center" style="background: rgba(255, 0, 110, 0.2); border: 1px solid #ff006e;">
                 <svg class="w-6 h-6" fill="#ff006e" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -671,7 +695,7 @@
           </div>
           
           <div class="text-center">
-            <a href="mailto:koketsomohlala35@gmail.com" class="neon-btn px-10 py-4 font-mono text-sm inline-flex items-center gap-3" style="background: linear-gradient(135deg, #ff006e, #8b0040); color: #fff;">
+            <a href="mailto:koketsohlabirwa02@gmail.com" class="neon-btn px-10 py-4 font-mono text-sm inline-flex items-center gap-3" style="background: linear-gradient(135deg, #ff006e, #8b0040); color: #fff;">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
               </svg>
@@ -688,7 +712,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="flex items-center gap-2">
             <div class="w-2 h-2 rounded-full animate-pulse" style="background: #00f5ff;"></div>
-            <span class="font-mono text-xs" style="color: #888;">KOKETSO_MOHLALA © 2026</span>
+            <span class="font-mono text-xs" style="color: #888;">KOKETSO_MOHLALA © 2025</span>
           </div>
           <div class="flex items-center gap-4">
             <span class="font-mono text-xs" style="color: #ff006e;">SYSTEM_STATUS:</span>
@@ -812,10 +836,5 @@
       onConfigChange(defaultConfig);
     }
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cef07f053744ebc',t:'MTc3MTI2NTczMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cef87b277e573a8',t:'MTc3MTI3MDk2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
-
-
-
-
