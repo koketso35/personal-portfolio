@@ -278,14 +278,11 @@
           <a href="#projects" class="neon-btn danger-border px-8 py-3 font-mono text-sm" style="color: #ff006e;">
             VIEW_PROJECTS
           </a>
-          <a href="https://github.com/koketso35/personal-portfolio/raw/main/Koketso%20Mohlala%20CV.pdf" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-8 py-3 font-mono text-sm flex items-center gap-2" style="color: #00f5ff;">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-            </svg>
-            VIEW_CV
-          </a>
           <a href="#contact" class="neon-btn px-8 py-3 font-mono text-sm" style="background: linear-gradient(135deg, #ff006e, #8b0040); color: #fff;">
             INITIALIZE_CONTACT
+          </a>
+          <a href="your-cv-link-here.pdf" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-8 py-3 font-mono text-sm" style="color: #00f5ff;">
+            VIEW_CV
           </a>
         </div>
       </div>
@@ -634,6 +631,47 @@
               </div>
             </div>
           </div>
+          
+          <!-- Project 4 - My Services -->
+          <div class="card-danger rounded-lg overflow-hidden group project-card" onclick="window.location.href='https://koketso35.github.io/myServices/'">
+            <div class="h-48 relative" style="background: linear-gradient(135deg, #2e1a2e, #3d1f2d);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-20 h-20 opacity-50 group-hover:opacity-80 transition-opacity" viewBox="0 0 100 100" fill="none">
+                  <rect x="20" y="25" width="25" height="50" rx="2" stroke="#00f5ff" stroke-width="2" fill="rgba(0,245,255,0.1)"/>
+                  <rect x="55" y="25" width="25" height="50" rx="2" stroke="#ff006e" stroke-width="2" fill="rgba(255,0,110,0.1)"/>
+                  <circle cx="32.5" cy="40" r="4" fill="#00f5ff"/>
+                  <circle cx="67.5" cy="40" r="4" fill="#ff006e"/>
+                  <path d="M25 60 L32.5 68 M75 60 L67.5 68" stroke="#00f5ff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="absolute top-3 right-3 px-2 py-1 rounded text-xs font-mono" style="background: rgba(0, 245, 255, 0.2); color: #00f5ff;">
+                LIVE
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-mono text-lg mb-2" style="color: #ff006e;">MY_SERVICES_PORTFOLIO</h3>
+              <p class="text-sm font-mono mb-4" style="color: #888;">Showcase of professional services and expertise with portfolio demonstrations.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(255,0,110,0.1); color: #ff006e;">HTML</span>
+                <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(0,245,255,0.1); color: #00f5ff;">CSS</span>
+                <span class="px-2 py-1 rounded text-xs font-mono" style="background: rgba(255,0,110,0.1); color: #ff006e;">JavaScript</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="https://koketso35.github.io/myServices/" target="_blank" rel="noopener noreferrer" class="neon-btn danger-border px-4 py-2 text-xs font-mono flex items-center gap-2" style="color: #00f5ff;" onclick="event.stopPropagation();">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                  </svg>
+                  LIVE_DEMO
+                </a>
+                <a href="https://github.com/koketso35/myServices" target="_blank" rel="noopener noreferrer" class="neon-btn px-4 py-2 text-xs font-mono flex items-center gap-2" style="background: rgba(255,0,110,0.2); color: #ff006e;" onclick="event.stopPropagation();">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  SOURCE
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div class="text-center mt-12">
@@ -836,5 +874,5 @@
       onConfigChange(defaultConfig);
     }
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cefa18c83e893cf',t:'MTc3MTI3MjAyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cf305e312094edb',t:'MTc3MTMwNzU5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
